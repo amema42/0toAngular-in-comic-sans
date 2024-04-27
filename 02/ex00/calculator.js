@@ -63,7 +63,7 @@ function displayDivisionByZeroAlert() {
     alert("Division by zero is not allowed. Check out this video: https://youtu.be/T2U07KFqmew");
 }
 
-// Set interval for alert popup every 30 seconds
+// set interval for alert popup every 30 seconds🤯
 setInterval(function() {
     alert("Please, use me...");
 }, 30000);

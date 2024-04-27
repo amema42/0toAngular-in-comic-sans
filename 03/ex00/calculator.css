@@ -1,0 +1,8 @@
+body, input, select, button, p {
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.result-text {
+    color: green;
+}
+

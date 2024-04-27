@@ -1,0 +1,164 @@
+
+/*header items & style*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*bello bottone, I mean: TOGGLE VIEW, thanks to ChatGPT :)*/
+#toggleView {
+    font-style: bold;
+    display: block;
+    margin: 0 auto; /* this will center the button horizontally */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    animation: rainbow 6s infinite; /* applying the the animation */
+}
+
+/* Define the animation */
+@keyframes rainbow {
+    0% { background-color: #000000; } /* 0 */
+    25% { background-color: #f2ff00; } /* 1 */
+    50% { background-color: #412ae9; } /* Yellow */
+    75% { background-color: #00ff00; } /* Green */
+    100% { background-color: #ff001e; } /* Blue */
+}
+
+/*this one's the button I created in the Ts*/
+#toggleFont {
+    background-color: yellow;
+    font-size: 2em;
+    opacity: 0.75;
+    position: fixed;
+    top: 100px; /* Adjust this value to set the desired distance from the top */
+    left: 20px; /* Adjust this value to set the desired distance from the left */
+    z-index: 9999; /* Ensure the button is above other elements */
+    margin-right: 10px; /* Add some margin to the right to prevent overlap */ /*THANKS CHAT!*/
+}
+
+
+/* general styles */
+.container {
+    margin: 10px;
+}
+body, input, select, button, p {
+    font-family: 'Comic Sans MS', cursive;
+}
+
+/*dynamic button css*/
+.comic-sans {
+    font-family: 'Comic Sans MS', cursive; /*this one, by default, global -> take a look to the TS (js) func add.EventListener*/
+}
+
+
+.helvetica-bold {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+}
+
+
+/* card view */
+
+.card {
+    border-style: dashed;
+    border: 3.5px dashed #b900bf;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    display: inline-block;
+    vertical-align:top;
+    transition: border-color 0.5s;
+}
+
+.card:hover {
+    border-color: #2308ea; /* Change to desired border color */
+    border: 6.5px dashed #2308ea;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.card span {
+    font-weight: bold;
+    font-size: 16px;
+    color: green;
+}
+
+
+/* list view da qui in poi */
+.list-view {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(50% - 20px);
+    display: flex;
+    align-items: center;
+}
+
+.list-item img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.list-item div {
+    flex-grow: 1; /* take remaining space (?) */
+}
+
+.list-item p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.list-item h2 {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.list-item span {
+    font-weight: bold;
+    font-size: 14px;
+    color: green;
+}
+
+/*add to cart button*/

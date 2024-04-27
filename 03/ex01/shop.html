@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ts Shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <header>
+        <h1>The Ts Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">🏠 homy's Home</a></li>
+                <li><a href="https://github.com/amema42">💾 amema's github (42 school)</a></li>
+                <li><a href="https://www.linkedin.com/in/animema/">📫 Contact? - linkedin</a></li>
+                <li><a href="https://www.instagram.com/meowcrosoftwindows/">🙂mooore 'bout me? ig-></a></li>
+            </ul>
+        </nav>
+        <div id="cart">
+            <span>quanta roba hai nel carello?</span>
+            <span id="cart-count" style="color: rgb(255, 0, 0); font-size:x-large;">0</span>
+            <img src="https://freeiconshop.com/wp-content/uploads/edd/cart-outline.png" alt="Cart" width="32" height="32">
+        </div>
+    </header>
+    <main>
+        <button id="toggleView">Boring View -> here</button>
+        <div id="shop-container" class="container">
+            <!-- Products will be dynamically added here IT WORKS! -->
+        </div>
+
+        <div id="list-container" class="container list-view" style="display: none;">
+            <!-- LIST VIEW: the products will be dynamically added here... maybe-->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 The Ts Shop in (ofc Typescript) 😅 amema - some rights reserved.</p>
+    </footer>
+    <div id="modal" class="modal">
+        <!-- modal content will be dynamically added here ,  modal? go check 4 it -->
+    </div>
+    <script src="shop.js"></script>
+</body>
+</html>
