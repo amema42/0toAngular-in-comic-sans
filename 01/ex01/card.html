@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynamic Profile Card</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <div class="card">
+        <h2>miniDev bmo(jake? amema?)</h2>
+        <table>
+            <tr>
+                <td><strong>Name:</strong></td>
+                <td id="name">Ani Mema</td>
+            </tr>
+            <tr>
+                <td><strong>Description:</strong></td>
+                <td id="description">spreading love like a pointer, a pointer to your heart</td>
+            </tr>
+        </table>
+        <img id="profile-pic" src="https://t.ly/_jzFu" alt="Profile Picture">
+        <button onclick="changeName()">change Name (?)</button>
+        <button onclick="changeImage()">change Image(???)</button>
+        <button onclick="changeDescription()">change the description(???)</button>
+
+
+        <a href="https://pointerpointer.com/" target="_blank"><button>Contact</button></a>
+
+        <script>
+            function changeName() {
+                var newName = "JakeTheDOC🥳";
+                document.getElementById("name").textContent = newName;
+            }
+            function changeDescription() {
+                var newName1 = "here w r 🥶🥶";
+                document.getElementById("description").textContent = newName1;
+            }
+            function changeImage() {
+                var newImageSrc = "https://rb.gy/d7seal"; /*jake&bmo fusion together*/
+                document.getElementById("profile-pic").src = newImageSrc;
+            }
+        </script>
+    </div>
+</body>
+</html>

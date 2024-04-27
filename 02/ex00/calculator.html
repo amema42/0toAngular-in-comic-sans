@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+	<link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+	<div class="calculator-wrapper">
+    	<input type="number" id="leftInput" placeholder="Enter left operand (>= 0)">
+    	<select id="operator">
+        	<option value="+">+</option>
+        	<option value="-">-</option>
+        	<option value="*">*</option>
+        	<option value="/">/</option>
+    	</select>
+    	<input type="number" id="rightInput" placeholder="Enter right operand (>= 0)">
+    	<input type="button" value="Calculate me baby!" onclick="calculate()">
+	</div>
+    <p id="result" class="result-text"></p>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

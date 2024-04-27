@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bonus Form</title>
+<link rel="stylesheet" href="bonus.css">
+<script src="bonus.js" defer></script>
+<style>
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+  <h2>Bonus Form by amema🥳</h2>
+  <form id="bonusForm">
+    <div>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" maxlength="50">
+      <span id="firstNameError" class="error-message"></span>
+    </div>
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" maxlength="50">
+      <span id="lastNameError" class="error-message"></span>
+    </div>
+    <div>
+        <label>Gender:</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="non-binary" name="gender" value="non-binary">
+        <label for="non-binary">Non-binary [!01]</label>
+        <span id="genderError" class="error-message"></span>
+    </div>
+
+
+    <div>
+      <label for="university">University:</label>
+      <select id="university" name="university">
+        <option value="">Select University</option>
+        <option value="uni1">Università della strada - via Marsala</option>
+        <option value="uni2">Ho lo zaino della Luiss</option>
+        <option value="uni3">Quanto ci metti ad arrivare a Tor Vergata?</option>
+      </select>
+      <span id="universityError" class="error-message"></span>
+    </div>
+    <div>
+      <label for="zipCode">ZIP Code:</label>
+      <input type="text" id="zipCode" name="zipCode" maxlength="5">
+      <span id="zipCodeError" class="error-message"></span>
+    </div>
+    <div>
+      <label for="studentWorker">Student Worker:</label>
+      <input type="checkbox" id="studentWorker" name="studentWorker">
+    </div>
+    <div>
+      <label for="jobDescription">Job Description:</label>
+      <input type="text" id="jobDescription" name="jobDescription" maxlength="80">
+      <span id="jobDescriptionError" class="error-message"></span>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+</body>
+</html>

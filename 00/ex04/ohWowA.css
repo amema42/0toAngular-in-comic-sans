@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive;
+  }
+
+  .parallax {
+    /* img used as background */
+    background-image: url('https://t.ly/E3Ufk');
+    /*  height, in this case FULL */
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* centered text vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .parallax-content {
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+  }
+
+  .content {
+    padding: 40px;
+  }
